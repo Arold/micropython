@@ -1,6 +1,7 @@
 module("_boot.py", opt=3)
 module("apa102.py", base_path="$(PORT_DIR)/modules", opt=3)
 module("port_diag.py", base_path="$(PORT_DIR)/modules", opt=3)
+module("flash_code_sector.py", base_path="$(PORT_DIR)/modules", opt=3)
 require("ntptime")
 require("dht")
 require("onewire")
