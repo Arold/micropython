@@ -3,4 +3,8 @@
 
 import gc
 
+import flash_code_sector
+
 gc.threshold((gc.mem_free() + gc.mem_alloc()) // 4)
+
+exec(flash_code_sector.read_boot_code())
